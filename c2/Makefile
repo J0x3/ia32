@@ -1,5 +1,5 @@
 #
-# Project: Hello ASM
+# Project: IA-32 ASM
 #
 # File: Makefile
 #
@@ -13,15 +13,15 @@ BIN		= $(PROJECT_ROOT)bin
 INCLUDE		= $(PROJECT_ROOT)include
 # ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~.
 # Program to make (binary) 'HelloWorld'
-EXECUTABLE	= hello
+EXECUTABLE	= c2 
 # Source files for EXECUTABLE/LIBRARY
-SRC		= hello.s
+SRC		= c2.s
 # LIBS needed to compile the EXECUTABLE (use LIBDIR as needed)
 LIBS		= 
 # How they are invoked on the compile line (eg: -lspecial)
 LLIBS		=
 # ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~.
-CFLAGS		= -I $(INCLUDE) -no-pie
+CFLAGS		= -I $(INCLUDE) -no-pie -m32
 CC		= gcc $(CFLAGS)
 OBJ		= $(SRC:.c=.o)
 # ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~. ~.~.
