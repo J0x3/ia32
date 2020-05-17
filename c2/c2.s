@@ -1,4 +1,3 @@
-# Reverse.re Challenge
 # https://challenges.re/2/
 .intel_syntax noprefix
 
